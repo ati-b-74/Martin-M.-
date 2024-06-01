@@ -1,0 +1,233 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main() {
+	cout << "number?";
+	int num;
+	cin >> num;
+	for (int a = 0; a < 1; a++) {
+		for (int b = 0; b < 1; b++) {
+			cout << "/";
+		}
+		for (int c = 0; c < round(num / 2); c++) {
+			cout << "^";
+		}
+		for (int b = 0; b < 1; b++) {
+			cout << "\\";
+		}
+		if (num*2>=10) {
+			for (int d = 0; d<(num*2)/num; d++) {
+				cout<<"_";
+			}
+		}
+		for (int b = 0; b < 1; b++) {
+			cout << "/";
+		}
+		for (int c = 0; c < round(num / 2); c++) {
+			cout << "^";
+		}
+		for (int b = 0; b < 1; b++) {
+			cout << "\\";
+		}
+		cout << endl;
+	}
+for (int a = 0; a < num - 3; a++) {
+	for (int b = 0; b < 1; b++) {
+		cout << "|";
+	}
+	for (int c = 0; c < (num/2)+1; c++) {
+		cout << " ";
+	}
+	for (int d = 0; d < (num * 2) / num; d++) {
+		cout << " ";
+	}
+	for (int c = 0; c < (num / 2)+1; c++) {
+		cout << " ";
+	}
+	for (int b = 0; b < 1; b++) {
+		cout << "|";
+	}
+	cout << endl;
+}
+for (int a = 0; a < 1; a++) {
+	for (int b = 0; b < 1; b++) {
+		cout << "|";
+	}
+	for (int c = 0; c < round(num / 2)+1; c++) {
+		cout << " ";
+	}
+	if (num * 2 >= 10) {
+		for (int d = 0; d < (num * 2) / num; d++) {
+			cout << "_";
+		}
+	}
+	for (int c = 0; c < round(num / 2)+1; c++) {
+		cout << " ";
+	}
+	for (int b = 0; b < 1; b++) {
+		cout << "|";
+	}
+	cout << endl;
+}
+for (int a = 0; a < 1; a++) {
+	for (int b = 0; b < 1; b++) {
+		cout << "\\";
+	}
+	for (int c = 0; c< round(num / 2); c++) {
+		cout << "_";
+	}
+	for (int b = 0; b < 1; b++) {
+		cout << "/";
+	}
+	if (num * 2 >= 10) {
+		for (int d = 0; d < (num * 2) / num; d++) {
+			cout << " ";
+		}
+	}
+	for (int b = 0; b < 1; b++) {
+		cout << "\\";
+	}
+	for (int c = 0; c < round(num / 2); c++) {
+		cout << "_";
+	}
+	for (int b = 0; b < 1; b++) {
+		cout << "/";
+	}
+	cout << endl;
+}
+/*first row*/
+for (int a = 0; a < 1; a++) {
+	string space1(4, ' ');
+	string stars1(2, '*');
+	string space9(6, ' ');
+	string stars9(2, '*');
+	string space10(10, ' ');
+	string stars2(4, '*');
+	string space3(6, ' ');
+	string stars3(7, '*');
+	string space4(2, ' ');
+	string stars4(10, '*');
+	string space5(2, ' ');
+	string stars5(2, '*');
+	string space6(4, ' ');
+	string stars6(4, '*');
+	string space7(2, ' ');
+	string stars7(2, '*');
+	string space8(3, ' ');
+	string stars8(2, '*');
+	cout << space1 << stars1 << space9 << stars9 << space10 << stars2 << space3 << stars3 << space4 << stars4 << space5 << stars5 << space6 << stars6 << space7 << stars7 << space8 << stars8;
+}
+cout << endl;
+/*second row*/
+for (int b = 0; b < 1; b++) {
+	string space1(3, ' ');
+	string stars1(4, '*');
+	string space2(4, ' ');
+	string stars2(4, '*');
+	string space3(8, ' ');
+	string stars3(2, '*');
+	string space4(2, ' ');
+	string stars4(2, '*');
+	string space5(5, ' ');
+	string stars5(2, '*');
+	string space6(2, ' ');
+	string stars6(3, '*');
+	string space7(2, ' ');
+	string stars7(10, '*');
+	string space8(2, ' ');
+	string stars8(2, '*');
+	string space9(3, ' ');
+	string stars9(2, '*');
+	string space10(1, ' ');
+	string stars10(2, '*');
+	string space11(2, ' ');
+	string stars11(2, '*');
+	string space12(3, ' ');
+	string stars12(2, '*');
+	cout << space1 << stars1 << space2 << stars2 << space3 << stars3 << space4 << stars4 << space5 << stars5 << space6 << stars6 << space7 << stars7 << space8 << stars8 << space9 << stars9 << space10 << stars10 << space11 << stars11 << space12 << stars12;
+}
+cout << endl;
+/*third row*/
+for (int c = 0; c < 1; c++) {
+	string space1(2, ' ');
+	string stars1(2, '*');
+	string space2(2, ' ');
+	string stars2(2, '*');
+	string space3(2, ' ');
+	string stars3(2, '*');
+	string space4(2, ' ');
+	string stars4(2, '*');
+	string space5(6, ' ');
+	string stars5(8, '*');
+	string space6(4, ' ');
+	string stars6(7, '*');
+	string space7(6, ' ');
+	string stars7(2, '*');
+	string space8(6, ' ');
+	string stars8(2, '*');
+	string space9(2, ' ');
+	string stars9(2, '*');
+	string space10(2, ' ');
+	string stars10(2, '*');
+	string space11(2, ' ');
+	string stars11(7, '*');
+	cout << space1 << stars1 << space2 << stars2 << space3 << stars3 << space4 << stars4 << space5 << stars5 << space6 << stars6 << space7 << stars7 << space8 << stars8 << space9 << stars9 << space10 << stars10 << space11 << stars11;
+}
+cout << endl;
+/*fourth row*/
+for (int b = 0; b < 1; b++) {
+	string space1(1, ' ');
+	string stars1(2, '*');
+	string space2(4, ' ');
+	string stars2(4, '*');
+	string space3(4, ' ');
+	string stars3(2, '*');
+	string space4(4, ' ');
+	string stars4(2, '*');
+	string space5(6, ' ');
+	string stars5(2, '*');
+	string space6(3, ' ');
+	string stars6(2, '*');
+	string space7(11, ' ');
+	string stars7(2, '*');
+	string space8(6, ' ');
+	string stars8(2, '*');
+	string space9(1, ' ');
+	string stars9(2, '*');
+	string space10(3, ' ');
+	string stars10(2, '*');
+	string space11(2, ' ');
+	string stars11(2, '*');
+	string space12(3, ' ');
+	string stars12(2, '*');
+	cout << space1 << stars1 << space2 << stars2 << space3 << stars3 << space4 << stars4 << space5 << stars5 << space6 << stars6 << space7 << stars7 << space8 << stars8 << space9 << stars9 << space10 << stars10 << space11 << stars11 << space12 << stars12;
+}
+cout << endl;
+/*fifth row*/
+for (int b = 0; b < 1; b++) {
+	string stars1(2, '*');
+	string space2(6, ' ');
+	string stars2(2, '*');
+	string space3(6, ' ');
+	string stars3(2, '*');
+	string space4(2, ' ');
+	string stars4(2, '*');
+	string space5(8, ' ');
+	string stars5(2, '*');
+	string space6(2, ' ');
+	string stars6(2, '*');
+	string space7(11, ' ');
+	string stars7(2, '*');
+	string space8(6, ' ');
+	string stars8(4, '*');
+	string space9(4, ' ');
+	string stars9(2, '*');
+	string space10(2, ' ');
+	string stars10(2, '*');
+	string space11(3, ' ');
+	string stars12(2, '*');
+	cout << stars1 << space2 << stars2 << space3 << stars3 << space4 << stars4 << space5 << stars5 << space6 << stars6 << space7 << stars7 << space8 << stars8 << space9 << stars9 << space10 << stars10 << space11 << stars12;
+}
+cout << endl;
+	return 0;
+}
