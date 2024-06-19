@@ -1,0 +1,57 @@
+#include<iostream>
+
+using namespace std;
+int main() {
+	int num;
+	cin >> num;
+	int firstly = 1;
+	int lastly = num;
+	int firstnumrow = 1;
+		do {
+			cout << firstly;
+			firstly++;
+		} while (firstly < num + 1);
+		cout << endl;
+
+  for (int rows = 1; rows <= num - 2; rows++) {
+	firstnumrow++;
+	cout << firstnumrow;
+	int firstnumcol = firstnumrow + 1;
+	for (int leftcolumn = 1; leftcolumn <= num-rows; leftcolumn++) {
+		cout << firstnumcol;
+		firstnumcol++;
+		if (firstnumcol>num) {
+			int lastnumbersincolumn = num;
+			for (int rightcolumn = 1; rightcolumn <= rows; rightcolumn++) {
+				lastnumbersincolumn--;
+				cout << lastnumbersincolumn;
+			}
+			break;
+		}
+	}
+	cout << endl;
+}
+
+		do {
+			cout << lastly;
+			lastly--;
+		} while (lastly>0);
+		
+		cout << endl;
+	return 0;
+}
+
+
+// 123456
+// 234565
+// 345654
+// 456543
+// 565432
+// 654321 //
+
+
+// 12345                          
+// 23454
+// 34543
+// 45432
+// 54321 //
